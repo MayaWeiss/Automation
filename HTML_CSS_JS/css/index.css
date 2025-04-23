@@ -1,0 +1,83 @@
+
+.introContainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+
+  height: 50vh;
+  margin: 5% auto;
+  --s: 47px;  /* control the size of the wave */
+  --w: 55vw; /* preferred image width */
+  --c: rgb(14, 110, 70);
+  
+  width: round(var(--w),2*var(--s)); 
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: var(--s);
+  border-radius: calc(1.5*var(--s));
+  --R:calc(var(--s)/sqrt(2)) at;
+  --g:radial-gradient(var(--R) 50%,var(--c) calc(100% - 1px),#0000) 
+     0 0/calc(2*var(--s)) calc(2*var(--s));
+  --_c:#0000 100%,var(--c) calc(100% + 1px);
+  --_b:calc(2*var(--s)) calc(51% - var(--s)/2) repeat-x;
+  background: var(--g),
+    radial-gradient(var(--R) 50% calc(100% + var(--s)/2),var(--_c)) 
+     var(--s) calc(100% - var(--s)/2)/var(--_b),
+    radial-gradient(var(--R) 50% calc(      var(--s)/-2),var(--_c)) 
+     var(--s) calc(       var(--s)/2)/var(--_b);
+  --_m:var(--s)/calc(51% - var(--s)/2) calc(2*var(--s)) repeat-y;
+  mask: var(--g),
+    radial-gradient(var(--R) calc(100% + var(--s)/2) 50%,var(--_c))
+     calc(100% - var(--s)/2) var(--_m),
+    radial-gradient(var(--R) calc(var(--s)/-2) 50%,var(--_c)) 
+     calc(var(--s)/2) var(--_m);
+}
+.intro{
+  padding: 10px;
+  margin-top: 2%;
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.8;
+  color: white;
+}
+
+.enter{
+  width: 100px;
+  height: 50px;
+  margin-top: 2%;
+  align-items: center;
+ 
+  background-color: rgb(14, 110, 70);
+  border: 1px solid white;
+  border-radius: 30px;
+  box-shadow: black 13px 13px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 22px;
+  justify-content: center;
+  line-height: 1em;
+  padding: 19px 24px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.5s
+}
+
+.enter:hover{
+  background-color: #fff;
+  color: rgb(14, 110, 70);
+  border: 1px solid black;
+  
+}
+
+.enter:active{
+  transform: translate(0px, 4px);
+  
+  
+}
+
+
+
+

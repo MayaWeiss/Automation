@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css\navBar.css">
+  <link rel="stylesheet" href="css\registration.css">
+</head>
+<body>
+  <nav>
+    <a href=index.html>Home</a>
+    <div class="test">
+      <div id="menuLinks" class="links">
+        <a href="index.html">Home</a>
+        <a href="exercise.html">Let's Exercise</a>
+        <a href="moreExercises.html">More Exercises</a>
+        <a href="registration.html">Registration</a>
+      </div>
+    </div>
+
+    <div class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <form method="get" action="submitted.html" name="register" onsubmit="return checkForm()">
+    <div class="formHeader">
+      <h1>:לעוד תכנים ועדכונים הרשמו</h1>
+    </div>
+
+    <div class="formInputsContainer">
+      <div class="formInputs">
+        <input type="text" id="firstName" name="firstName">
+        <label for="firstName">:שם פרטי</label>
+      </div>
+      <p id="fname" class="msg"></p>
+      <div class="formInputs">  
+        <input type="text" id="lastName" name="lastName">
+        <label for="lastName">:שם משפחה</label>
+      </div>  
+      <p id="lname" class="msg"></p>
+      <div class="formInputs">
+        <input type="text" id="phone" name="phone">
+        <label for="phone">:מספר פלאפון</label>
+      </div>
+      <p id="phoneNumber" class="msg"></p>
+      <div class="formInputs">
+        <input type="email" id="email" name="email">
+        <label for="email">:דואר אלקטרוני</label>
+      </div>
+      <p id="emailAddress" class="msg"></p>
+    </div>
+    
+
+    <div class="formRadioContainer">
+      <h3>?איזה סוג של תרגילים הייתם רוצים לקבל</h3>
+      <div class="radio">
+        <label for="math">חשבון</label>
+        <input type="radio" id="math" name="kindOfActivity" value="math"><br>
+        <label for="language">שפה</label>
+        <input type="radio" id="language" name="kindOfActivity" value="language">
+      </div>
+      <p id="radioMsg" class="msg"></p>
+      
+      
+    </div>
+    <div class="submitBtn">
+      <input type="submit" name="submitBtn" value="Send"/>
+    </div>
+    
+    
+  </form>
+  <script src="js\navBar.js"></script>
+  <script src="js\registration.js"></script>
+</body>
+</html>

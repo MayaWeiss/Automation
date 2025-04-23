@@ -1,0 +1,77 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+form{
+  display: flex;
+  width: 35%;
+  height: 80%;
+  border: 1px solid white;
+  border-radius: 15px;
+  margin: 20px auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-color: rgb(14, 110, 70);
+}
+.formHeader{
+  margin-top: 0%;
+  margin-bottom: 5%;
+}
+
+.formInputsContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(14, 110, 70);
+}
+
+.formInputs{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 15%;
+  align-items: center;
+}
+
+.formRadioContainer{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(14, 110, 70);
+}
+
+input[type="text"], input[type="email"]{
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: rgb(14, 110, 70);
+  direction: rtl; /* Left-to-right text direction */
+  padding-right: 5px;
+  color: white;
+}
+
+label{
+  font-size: 18px;
+  color: white
+}
+
+input[type="radio"]{
+  float: right;
+  margin-left: 10px;
+}
+
+.msg{
+  margin-left: 15%;
+  padding-left: 1%;
+  margin-top: 3px;
+  width: 38%;
+  margin-bottom: 5%;
+  color: red;
+  font-size: 0.8em;
+}
+

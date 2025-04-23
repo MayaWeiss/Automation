@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maya's Web Site</title>
+  <link rel="stylesheet" href="css\exercise.css">
+  <link rel="stylesheet" href="css\navBar.css">
+  <link rel="stylesheet" href="fontAwesome/css/all.min.css">
+ 
+</head>
+<body>
+  <nav>
+    <a href=index.html>Home</a>
+    <div class="test">
+      <div id="menuLinks" class="links">
+        <a href="index.html">Home</a>
+        <a href="exercise.html">Let's Exercise</a>
+        <a href="moreExercises.html">More Exercises</a>
+        <a href="registration.html">Registration</a>
+      </div>
+    </div>
+
+    <div class="hamburger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  
+  <div class="variables">
+    <p id="var1" class="var"></p>
+    <p class="plus">+</p>
+    <p id="var2" class="var"></p>
+    <p class="equal">=</p>
+  </div>
+
+  <div class="feedback">
+    <i id="check" class="fa-solid fa-check fa-beat fa-2xl"></i>
+    <i id="x" class="fa-solid fa-x fa-beat fa-2xl"></i>
+  </div>
+
+  <div class="answersButtons">
+    <button id="1" type="button" name="1" onClick="checkAnswer(1)"></button>
+    <button id="2" type="button" name="2" onClick="checkAnswer(2)"></button>
+    <button id="3" type="button" name="3" onClick="checkAnswer(3)"></button>
+    <button id="4" type="button" name="4" onClick="checkAnswer(4)"></button>
+    <button id="5" type="button" name="5" onClick="checkAnswer(5)"></button>
+  </div>
+  <div class="changeExercise">
+    <button id="changeExercise" disabled onclick="changeExercise()">next exercise</button>
+    <button id="tryAgain" disabled onclick="tryAgain()">try again</button>
+  </div>
+
+  <script src="js\exercise.js"></script>
+  <script src="js\navBar.js"></script>
+</body>
+</html>
